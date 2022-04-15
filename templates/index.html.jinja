@@ -7,6 +7,29 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {{ title }} page testing
+    <header>
+        <hgroup>
+            <h1>
+                {{ title }} page testing
+            </h1>
+        </hgroup>
+    </header>
+    <main>
+        <form action="/" method="post">
+            <label for="player1_name">Name of the player1</label>
+            <input type="text" name="player1_name" id="player1_name">
+
+            <label for="player1_choice">Choice of the player1</label>
+            <input type="text" name="player1_choice" id="player1_choice">
+<br><br>
+            <label for="player2_name">Name of the player2</label>
+            <input type="text" name="player2_name" id="player2_name">
+
+            <label for="player2_choice">Choice of the player2</label>
+            <input type="text" name="player2_choice" id="player2_choice">
+
+            <input type="submit" value="Play round">
+        </form>
+    </main>
 </body>
 </html>

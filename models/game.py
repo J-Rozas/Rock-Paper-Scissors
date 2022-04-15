@@ -15,8 +15,8 @@ class Game:
                 return f"{player1.name} wins by playing Paper."
             else:
                 return f"{player2.name} wins by playing Scissors."
-        else:
+        elif player1.choice == "scissors":
             if player2.choice == "paper":
                 return f"{player1.name} wins by playing Scissors."
             else:
-                return f"{player2.name} wins by playing Paper."
+                return f"{player2.name} wins by playing Rock."

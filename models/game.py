@@ -6,7 +6,7 @@ class Game:
         if player1.choice == player2.choice:
             return None
         elif player1.choice == "rock":
-            if player2.choice == "paper":
+            if player2.choice == "scissors":
                 return f"{player1.name} wins by playing Rock."
             else:
                 return f"{player2.name} wins by playing Paper."

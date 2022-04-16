@@ -5,7 +5,7 @@ from models.player import Player
 
 @app.route("/play")
 def home():
-    return render_template("index.html.jinja", title = "Rock Paper Scissors")
+    return render_template("play.html.jinja", title = "Rock Paper Scissors")
 
 @app.route("/result", methods=["POST"])
 def round():
@@ -19,3 +19,7 @@ def round():
 
     # Render a new html with the result of the round
     return render_template("result.html.jinja", title = "Game result", result_info = result_info)
+
+@app.route("/")
+def welcome():
+    return render_template("root.html.jinja", title = "Welcome & Rules")

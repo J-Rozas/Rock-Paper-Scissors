@@ -3,7 +3,7 @@ from app import app
 from models.game import Game
 from models.player import Player
 
-@app.route("/")
+@app.route("/play")
 def home():
     return render_template("index.html.jinja", title = "Rock Paper Scissors")
 

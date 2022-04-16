@@ -1,0 +1,49 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+<main>
+    <hgroup>
+        <h1>
+            Welcome to the Rock-Paper-Scissors Game!
+        </h1>
+    </hgroup>
+    <main>
+        <div>
+            <h2>
+                How to play the game:
+            </h2>
+            <p>
+                Type in your name.
+            </p>
+            <p>
+                Type in either "rock", "paper" or "scissors".
+            </p>
+            <p>
+                Press the button "play" and watch the result!
+            </p>
+        </div>
+        <div>
+            <h2>
+                Rules:
+            </h2>
+            <p>
+                If both players select the same item, the result is a draw.
+            </p>
+            <p>
+                Rock beats scissors.
+            </p>
+            <p>
+                Scissors beat paper.
+            </p>
+            <p>
+                Paper beats rock.
+            </p>
+        </div>
+    </main>
+    <aside>
+        <p>
+            You can <a href="./play">go to the game page by clicking on this link.</a>
+        </p>
+    </aside>
+</main>
+{% endblock %}

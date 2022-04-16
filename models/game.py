@@ -3,7 +3,7 @@ class Game:
         player1.choice = player1.choice.lower()
         player2.choice = player2.choice.lower()
 
-        if player1.choice == player2:
+        if player1.choice == player2.choice:
             return None
         elif player1.choice == "rock":
             if player2.choice == "paper":
